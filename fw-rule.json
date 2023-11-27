@@ -39,14 +39,15 @@
                     {
                         "ruleCollectionType": "FirewallPolicyFilterRuleCollection",
                         "action": {
-                            "type": "Deny"
+                            "type": "Allow"
                         },
                         "rules": [
                             {
                                 "ruleType": "NetworkRule",
                                 "name": "to_DNS",
                                 "ipProtocols": [
-                                    "UDP"
+                                    "UDP",
+                                    "TCP"
                                 ],
                                 "sourceAddresses": [
                                     "10.80.22.4"
